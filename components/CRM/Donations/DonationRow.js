@@ -308,7 +308,8 @@ const DonationRow = ({
     );
   };
   const renderFullDetails = () => {
-    return donation.isRecurring.trim() === "1"
+    if (!donation) return;
+    return donation?.isRecurring.trim() === "1"
       ? renderFullDetailsRecurring()
       : renderFullDetailsPayment();
   };

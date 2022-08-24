@@ -15,7 +15,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDownIcon, PhoneIcon } from "@chakra-ui/icons";
 import AccountIcon from "@components/Icons/AccountIcon";
-import Cellphone from "@components/Icons/Cellphone";
+// import Cellphone from "@components/Icons/Cellphone";
 import Email from "@components/Icons/Email";
 import DonateOptions from "./DonateOptions";
 import {
@@ -99,10 +99,10 @@ const Stage2 = ({
         <div className="flex justify-around">
           <div>
             <InputGroup>
-              <InputLeftElement
+              {/* <InputLeftElement
                 pointerEvents="none"
                 children={<Cellphone color="gray.100" />}
-              />
+              /> */}
 
               <Input
                 placeholder="Cell"

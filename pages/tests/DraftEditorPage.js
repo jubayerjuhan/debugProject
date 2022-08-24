@@ -8,12 +8,12 @@ import {
   ContentState,
 } from "draft-js";
 import api from "../../apis/userAPI";
-// const DraftEditor = dynamic(
-//   () => import('@components/Tests/react-draft-wysiwyg/DraftEditor'),
-//   {
-//     ssr: false,
-//   }
-// );
+const DraftEditor = dynamic(
+  () => import("@components/Tests/react-draft-wysiwyg/DraftEditor"),
+  {
+    ssr: false,
+  }
+);
 
 const DraftEditorPage = () => {
   useEffect(() => {}, []);

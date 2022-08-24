@@ -5,7 +5,7 @@ import test from "../../images/temp/test.jpg";
 import ReactPlayer from "react-player";
 
 const RenderSliderContent = (banner) => {
-  switch (parseInt(banner.banner.type)) {
+  switch (parseInt(banner?.banner?.type)) {
     case 0: {
       return (
         <Image
